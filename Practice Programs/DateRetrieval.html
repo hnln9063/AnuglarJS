@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateRetrieval</title>
+</head>
+<body>
+    Current Time: <span id="text"></span>
+    <script>
+        // JavaScript should be inside the body tag
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        document.getElementById('text').innerHTML=h+":"+m+":"+s;
+    </script>
+</body>
+</html>
